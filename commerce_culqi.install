@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains install and update functions for Commerce Culqi.
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function commerce_culqi_requirements($phase) {
+  $requirements = [];
+  if ($phase == 'install') {
+    if (!class_exists('\Culqi\Culqi')) {
+      $requirements['commerce_culqi_library'] = [
+        'description' => t('Commerce Culqi requires the culqi/culqi-php library.'),
+        'severity' => REQUIREMENT_ERROR,
+      ];
+    }
+  }
+
+  return $requirements;
+}

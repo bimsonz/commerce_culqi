@@ -1,0 +1,4 @@
+services:
+  commerce_culqi.culqi:
+    class: Drupal\commerce_culqi\Service\CulqiService
+    arguments: ['@config.factory', '@logger.factory']
