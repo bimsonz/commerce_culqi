@@ -1,0 +1,17 @@
+culqi:
+  js:
+    "https://checkout.culqi.com/v2/": { minified: true }
+form:
+  css:
+    theme:
+      css/waitMe.min.css: {}
+  js:
+    js/commerce_culqi.form.js: {}
+    js/waitMe.min.js: {}
+    js/jquery.redirect.js: {}
+  dependencies:
+    - classy/messages
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - commerce_culqi/culqi

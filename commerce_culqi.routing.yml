@@ -1,0 +1,6 @@
+commerce_culqi.create_charge:
+  path: 'commerce_culqi/create_charge'
+  defaults:
+    _controller: '\Drupal\commerce_culqi\Controller\CulqiController::createCharge'
+  requirements:
+    _access: 'TRUE'
