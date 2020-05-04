@@ -64,9 +64,10 @@ class PaymentMethodAddForm extends PaymentOffsiteForm {
       'data' => [
         'first_name' => $address->given_name,
         'last_name' => $address->family_name,
-        'address' => $address->address_line1,
+        'address' => $address->address_line1 . ', ' . $address->address_line2 . ', ' . $address->postal_code,
         'city' => $address->locality,
         'province' => $address->administrative_area,
+        'country_code' => $address->country_code,
       ],
     ];
 

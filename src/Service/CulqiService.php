@@ -53,11 +53,11 @@ class CulqiService {
           "email" => $parameterBag->get('email'),
           "source_id" => $parameterBag->get('source_id'),
           "antifraud_details" => [
-            "first_name" => $parameterBag->get('name', 'NN'),
-            "last_name" => $parameterBag->get('last_name', 'NN'),
-            "address" => $parameterBag->get('address', 'NN'),
-            "address_city" => $parameterBag->get('city', 'NN'),
-            "country_code" => "PE",
+            "first_name" => $parameterBag->get('first_name', 'NA'),
+            "last_name" => $parameterBag->get('last_name', 'NA'),
+            "address" => $parameterBag->get('address', 'NA'),
+            "address_city" => $parameterBag->get('city', 'NA'),
+            "country_code" => $parameterBag->get('country_code', 'NA'),
             ],
           ]
       );
